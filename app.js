@@ -4,15 +4,28 @@ const num1 = document.querySelector('#num1')
 const num2 = document.querySelector('#num2')
 const num3 = document.querySelector('#num3')
 const h1 = document.querySelector('#title')
+const credit = document.querySelector('#credit')
+let creditTotal = 50
+pull.addEventListener('click', checkCredit)
 
-pull.addEventListener('click', findNum)
+
+function checkCredit(){
+  if (creditTotal >= 5) {
+    creditTotal = creditTotal -= 5
+    credit.textContent = `${creditTotal}`
+    findNum()
+  } else {
+    h1.textContent = "Looks like you're broke, come back when you have money!"
+  }
+}
+
 
 function findNum (){
-  secretNum1 = Math.floor(Math.random() * 2 +1)
+  secretNum1 = Math.floor(Math.random() * 10 +1)
   num1.innerText = `${secretNum1}`
-  secretNum2 = Math.floor(Math.random() * 2 +1)
+  secretNum2 = Math.floor(Math.random() * 10 +1)
   num2.innerText = `${secretNum2}`
-  secretNum3 = Math.floor(Math.random() * 2 +1)
+  secretNum3 = Math.floor(Math.random() * 10 +1)
   num3.innerText = `${secretNum3}`
   checkWin()
 }
