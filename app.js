@@ -5,8 +5,10 @@ const num2 = document.querySelector('#num2')
 const num3 = document.querySelector('#num3')
 const h1 = document.querySelector('#title')
 const credit = document.querySelector('#credit')
+
 let prettyNum
 let creditTotal = 50
+
 pull.addEventListener('click', checkCredit)
 
 
