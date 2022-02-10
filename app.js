@@ -22,13 +22,13 @@ function checkCredit(){
 
 
 function findNum (){
-  secretNum1 = Math.floor(Math.random() * 5 +1)
+  secretNum1 = Math.floor(Math.random() * 10 +1)
   slotStyle(secretNum1)
   num1.innerText = `${prettyNum}`
-  secretNum2 = Math.floor(Math.random() * 5 +1)
+  secretNum2 = Math.floor(Math.random() * 10 +1)
   slotStyle(secretNum2)
   num2.innerText = `${prettyNum}`
-  secretNum3 = Math.floor(Math.random() * 5 +1)
+  secretNum3 = Math.floor(Math.random() * 10 +1)
   slotStyle(secretNum3)
   num3.innerText = `${prettyNum}`
   checkWin()

@@ -27,6 +27,9 @@ body {
 
 h1 {
   font-size: 4.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .container {
@@ -36,30 +39,48 @@ h1 {
   gap: 0px 10px; 
   grid-template-areas: 
     "num1 num2 num3"; 
-  width: 50%; 
-  height: 25%; 
+  width:fit-content;
+  height:fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 #num1 { 
   grid-area: num1; 
   background-color: aliceblue;
   font-size: 6rem;
   text-align: center;
+  border: 10px solid green;
 }
 #num2 {
   grid-area: num2; 
   background-color: aliceblue;
   font-size: 6rem;
   text-align: center;
+  border: 10px solid green;
 }
 #num3 { 
   grid-area: num3;
   background-color: aliceblue; 
   font-size: 6rem;
   text-align: center;
+  border: 10px solid green;
 }
 
 #credit {
   background-color: aliceblue; 
-  font-size: 6rem;
-  width:fit-content
+  font-size: 3rem;
+  width:fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid rebeccapurple;
+  display: inline-block;
 }
+
+#lever {
+  font-size: large;
+  margin-left: 15%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
