@@ -25,6 +25,9 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-size: 8rem;
+}
 
 .container {
   display: grid; 
@@ -36,17 +39,17 @@ body {
   width: 50%; 
   height: 25%; 
 }
-.num1 { 
+#num1 { 
   grid-area: num1; 
   background-color: aliceblue;
   font-size: 6rem;
 }
-.num2 {
+#num2 {
   grid-area: num2; 
   background-color: aliceblue;
   font-size: 6rem;
 }
-.num3 { 
+#num3 { 
   grid-area: num3;
   background-color: aliceblue; 
   font-size: 6rem;
