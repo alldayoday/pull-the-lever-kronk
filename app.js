@@ -5,6 +5,7 @@ const num2 = document.querySelector('#num2')
 const num3 = document.querySelector('#num3')
 const h1 = document.querySelector('#title')
 const credit = document.querySelector('#credit')
+let prettyNum
 let creditTotal = 50
 pull.addEventListener('click', checkCredit)
 
@@ -21,38 +22,62 @@ function checkCredit(){
 
 
 function findNum (){
-  secretNum1 = Math.floor(Math.random() * 10 +1)
-  num1.innerText = `${secretNum1}`
-  secretNum2 = Math.floor(Math.random() * 10 +1)
-  num2.innerText = `${secretNum2}`
-  secretNum3 = Math.floor(Math.random() * 10 +1)
-  num3.innerText = `${secretNum3}`
+  secretNum1 = Math.floor(Math.random() * 3 +1)
+  slotStyle()
+  num1.innerText = `${prettyNum}`
+  secretNum2 = Math.floor(Math.random() * 3 +1)
+  slotStyle2()
+  num2.innerText = `${prettyNum2}`
+  secretNum3 = Math.floor(Math.random() * 3 +1)
+  slotStyle3()
+  num3.innerText = `${prettyNum3}`
   checkWin()
 }
 
 function checkWin(){
   if (secretNum1 === secretNum2 && secretNum1 === secretNum3) {
     h1.innerText = `Winner!`
+    creditTotal = creditTotal += 200
+    credit.textContent = `${creditTotal}`
+  } else if (creditTotal > 0){
+    h1.innerText = `You still have ${creditTotal} credits, try again!`
   } else {
-    h1.innerText = "loser"
+    h1.innerText = `Dang, that's all your credits`
   }
 }
 
+function slotStyle(){
+  if (secretNum1 === 1) prettyNum = "🍒"
+  if (secretNum1 === 2) prettyNum = "🍄"
+  if (secretNum1 === 3) prettyNum = "🍀"
+}
+
+function slotStyle2(){
+  if (secretNum2 === 1) prettyNum2 = "🍒"
+  if (secretNum2 === 2) prettyNum2 = "🍄"
+  if (secretNum2 === 3) prettyNum2 = "🍀"
+}
+
+function slotStyle3(){
+  if (secretNum3 === 1) prettyNum3 = "🍒"
+  if (secretNum3 === 2) prettyNum3 = "🍄"
+  if (secretNum3 === 3) prettyNum3 = "🍀"
+}
 
 
 
 //pull the lever, kronk !
 //an emperors new groove themed slot machine? maybe!
 
-//each time a user clicks to pull the lever, call credit function to check if credit total is above 5 credits, if not, set h1 to say user is broke and game end
+//each time a user clicks to pull the lever, call credit function to check if credit total is above 5 credits, if not, set h1 to say user is broke and game end✅
 
-//if credit total is above 5 credits, subtract 5 credits from credit total, update credit box, call generate function
+//if credit total is above 5 credits, subtract 5 credits from credit total, update credit box, call generate function✅
 
-//for generate function, generate 3 random numbers (lets shoot for 1-10)
+//for generate function, generate 3 random numbers (lets shoot for 1-10)✅
 
 //for window, tie each of the random numbers generated to an image (maybe emoji) and place one in each box then call win function
 
-//for win function if num1 is the same as num2 and also the same as num3, win condition is met and credits are added to total.
+//for win function if num1 is the same as num2 and also the same as num3, win condition is met and credits are added to total.✅
 
 //add animation to make it look like images/emojis are "rolling" within their boxes, if not possible try some sort of slow fade in with a timeout on win function
 
