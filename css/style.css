@@ -19,11 +19,18 @@ html {
 
 body {
   background-color:#193068;
-  /* Use a system font, if none are available use an available sans-sarif font */
+  background-image: url('../assets/background-gif.gif');
+  background-size: cover;
+  height: 100vh;
+  padding:0;
+
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   margin: 0;
 }
+
+
+
 
 h1 {
   font-size: 5rem;
@@ -77,13 +84,18 @@ h1 {
   font-size: 4rem;
   width:fit-content;
   text-align: center;
+  vertical-align: center;
+  text-shadow: #008087;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  border: 5px solid #f4ae28;
   display: inline-block;
-  padding: 10px;
+  padding: 15px;
   font-family: 'Bubblegum Sans', cursive;
+  background-image: url("../assets/credit-background.png");
+  background-position: center;
+  height: 90px;
+  width: 190px;
 }
 
 #lever {
