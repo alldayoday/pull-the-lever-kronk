@@ -13,15 +13,15 @@ pull.addEventListener('click', checkCredit)
 function checkCredit(){
   if (creditTotal >= 5) {
     creditTotal = creditTotal -= 5
-    credit.textContent = `${creditTotal} credits`
-    findNum()
+    credit.textContent = `${creditTotal} Credits`
+    renderNum()
   } else {
     h1.textContent = "Looks like you're broke, come back when you have money!"
   }
 }
 
 
-function findNum (){
+function renderNum (){
   secretNum1 = Math.floor(Math.random() * 10 +1)
   slotStyle(secretNum1)
   num1.innerText = `${prettyNum}`
