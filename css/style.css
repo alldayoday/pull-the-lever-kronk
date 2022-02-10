@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background-color:#5358bb;
+  background-color:#193068;
   /* Use a system font, if none are available use an available sans-sarif font */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -29,7 +29,17 @@ h1 {
   font-size: 4rem;
   margin-top: 10px;
   text-align: center;
-  color:#f4ae28;
+  background-color: #008087;
+  background: 
+  -webkit-linear-gradient(#fad102, #d50b3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  
+}
+
+h1 {
+  font-size: 72px;
+
 }
 
 .container {
