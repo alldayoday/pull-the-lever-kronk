@@ -22,15 +22,15 @@ function checkCredit(){
 
 
 function findNum (){
-  secretNum1 = Math.floor(Math.random() * 3 +1)
-  slotStyle()
+  secretNum1 = Math.floor(Math.random() * 5 +1)
+  slotStyle(secretNum1)
   num1.innerText = `${prettyNum}`
-  secretNum2 = Math.floor(Math.random() * 3 +1)
-  slotStyle2()
-  num2.innerText = `${prettyNum2}`
-  secretNum3 = Math.floor(Math.random() * 3 +1)
-  slotStyle3()
-  num3.innerText = `${prettyNum3}`
+  secretNum2 = Math.floor(Math.random() * 5 +1)
+  slotStyle(secretNum2)
+  num2.innerText = `${prettyNum}`
+  secretNum3 = Math.floor(Math.random() * 5 +1)
+  slotStyle(secretNum3)
+  num3.innerText = `${prettyNum}`
   checkWin()
 }
 
@@ -46,22 +46,17 @@ function checkWin(){
   }
 }
 
-function slotStyle(){
-  if (secretNum1 === 1) prettyNum = "🍒"
-  if (secretNum1 === 2) prettyNum = "🍄"
-  if (secretNum1 === 3) prettyNum = "🍀"
-}
-
-function slotStyle2(){
-  if (secretNum2 === 1) prettyNum2 = "🍒"
-  if (secretNum2 === 2) prettyNum2 = "🍄"
-  if (secretNum2 === 3) prettyNum2 = "🍀"
-}
-
-function slotStyle3(){
-  if (secretNum3 === 1) prettyNum3 = "🍒"
-  if (secretNum3 === 2) prettyNum3 = "🍄"
-  if (secretNum3 === 3) prettyNum3 = "🍀"
+function slotStyle(secretNum){
+  if (secretNum === 1) prettyNum = "🍒"
+  if (secretNum === 2) prettyNum = "🍄"
+  if (secretNum === 3) prettyNum = "🍀"
+  if (secretNum === 4) prettyNum = "🦄"
+  if (secretNum === 5) prettyNum = "🌈"
+  if (secretNum === 6) prettyNum = "♥️"
+  if (secretNum === 7) prettyNum = "🍩"
+  if (secretNum === 8) prettyNum = "🌮"
+  if (secretNum === 9) prettyNum = "🧁️"
+  if (secretNum === 10) prettyNum = "🍌"
 }
 
 
