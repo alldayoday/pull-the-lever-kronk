@@ -40,9 +40,9 @@ function checkWin(){
     creditTotal = creditTotal += 1000
     credit.textContent = `${creditTotal}`
   } else if (creditTotal > 0){
-    h1.innerText = `Kronk, that's the wrong lever!!`
+    h1.innerText = `KRONK, that's the wrong lever!!`
   } else {
-    h1.innerText = `Dang, that's all your credits`
+    h1.innerText = `Yzma is gonna be so mad`
   }
 }
 

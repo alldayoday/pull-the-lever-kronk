@@ -26,8 +26,9 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
-  margin-top: 10px;
+  font-size: 5rem;
+  margin-top: 20px;
+  font-family: 'Bubblegum Sans', cursive;
   text-align: center;
   background-color: #008087;
   background: 
@@ -35,11 +36,6 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   
-}
-
-h1 {
-  font-size: 72px;
-
 }
 
 .container {
