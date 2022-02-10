@@ -59,44 +59,6 @@ function slotStyle(secretNum){
   if (secretNum === 10) prettyNum = " 🍌 "
 }
 
-
-//<div class="container">
-// {/* <div class="num1"></div>
-// <div class="num2"></div>
-// <div class="num3"></div>
-// <div class="button"></div>
-// <div class="credits"></div>
-// <div class="sales"></div>
-// <div class="h1"></div>
-// </div> */}
-
-//.container {  display: grid;
-// grid-template-columns: 1fr 1fr 1fr;
-// grid-template-rows: 13.3% 1fr 30.4%;
-// gap: 20px 10px;
-// grid-auto-flow: row;
-// grid-template-areas:
-//   "h1 h1 h1"
-//   "num1 num2 num3"
-//   "sales button credits";
-// width: 80%;
-// height: 80%;
-// }
-
-// .num1 { grid-area: num1; }
-
-// .num2 { grid-area: num2; }
-
-// .num3 { grid-area: num3; }
-
-// .button { grid-area: button; }
-
-// .credits { grid-area: credits; }
-
-// .sales { grid-area: sales; }
-
-// .h1 { grid-area: h1; }
-
 //pull the lever, kronk !
 //an emperors new groove themed slot machine? maybe!
 
@@ -106,9 +68,11 @@ function slotStyle(secretNum){
 
 //for generate function, generate 3 random numbers (lets shoot for 1-10)✅
 
-//for window, tie each of the random numbers generated to an image (maybe emoji) and place one in each box then call win function
+//for window, tie each of the random numbers generated to an image (maybe emoji) and place one in each box then call win function✅
 
 //for win function if num1 is the same as num2 and also the same as num3, win condition is met and credits are added to total.✅
+
+//add a favicon ✅
 
 //add animation to make it look like images/emojis are "rolling" within their boxes, if not possible try some sort of slow fade in with a timeout on win function
 
