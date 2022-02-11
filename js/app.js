@@ -6,38 +6,36 @@ const num3 = document.querySelector('#num3')
 const h1 = document.querySelector('#title')
 const credit = document.querySelector('#credit')
 
-let prettyNum
+// let prettyNum
 let creditTotal = 50
-
 pull.addEventListener('click', checkCredit)
 
-init()
-function init (){
-  startSpin()
-}
-
-function roller(){
-startSpin()
-}
+// init()
+// function init (){
+//   startSpin()
+// }
 
 
 function checkCredit(){
   if (creditTotal >= 5) {
     creditTotal = creditTotal -= 5
     credit.textContent = `${creditTotal} Credits`
-  renderNum()
+    renderNum()
   } else {
     h1.textContent = "Looks like you're broke, come back when you have money!"
   }
 }
 
+
 function renderNum (){
-  clearInterval(spin)
   secretNum1 = Math.floor(Math.random() * 10 +1)
+  num1.setAttribute("class", "flip-horizontal-bottom")
   num1.innerHTML = `<img src="../assets/${secretNum1}.png" />`
   secretNum2 = Math.floor(Math.random() * 10 +1)
+  num2.setAttribute("class", "flip-horizontal-bottom")
   num2.innerHTML = `<img src="../assets/${secretNum2}.png" />`
   secretNum3 = Math.floor(Math.random() * 10 +1)
+  num3.setAttribute("class", "flip-horizontal-bottom")
   num3.innerHTML = `<img src="../assets/${secretNum3}.png" />`
   checkWin()
 }
@@ -48,18 +46,33 @@ function checkWin(){
     confetti.start(3000)
     creditTotal = creditTotal += 100
     credit.textContent = `${creditTotal} Credits`
+  } else if (creditTotal > 999) {
+    h1.innerText = `You should honestly just cash out now`
   } else if (creditTotal > 0){
     h1.innerText = `KRONK, that's the wrong lever!!`
   } else {
     h1.innerText = `Yzma is gonna be so mad`
-  }
+  } 
 }
+
+setTimeout(
+function stopFlip(){
+  num1.setAttribute("class", "no-spin")
+  num2.setAttribute("class", "no-spin")
+  num3.setAttribute("class", "no-spin")
+}, 1000)
+
+let timeLeft = 5
 
 function startSpin(){
   spin = setInterval(roll, 200)
 }
+function seconds(){
 
-function roll() {
+}
+
+init()
+function init() {
   disp1 = Math.floor(Math.random() * 10 +1)
   disp2 = Math.floor(Math.random() * 10 +1)
   disp3 = Math.floor(Math.random() * 10 +1)
