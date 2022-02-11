@@ -9,13 +9,11 @@ const credit = document.querySelector('#credit')
 let prettyNum
 let creditTotal = 50
 
-pull.addEventListener('click', checkCredit)
+pull.addEventListener('click', stopSpin)
 
 init()
 function init(){
-  num1.innerHTML =`<img src="../assets/2.png" />`
-  num2.innerHTML =`<img src="../assets/2.png" />`
-  num3.innerHTML =`<img src="../assets/2.png" />`
+startTimer()
 }
 
 
@@ -29,19 +27,13 @@ function checkCredit(){
   }
 }
 
-// .innerHTML = '<img src="imageName.png" />'
-// ../assets/0.png
 
 function renderNum (){
   secretNum1 = Math.floor(Math.random() * 10 +1)
-  // slotStyle(secretNum1)
   num1.innerHTML = `<img src="../assets/${secretNum1}.png" />`
-  console.log(secretNum1)
   secretNum2 = Math.floor(Math.random() * 10 +1)
-  console.log(secretNum2)
   num2.innerHTML = `<img src="../assets/${secretNum2}.png" />`
   secretNum3 = Math.floor(Math.random() * 10 +1)
-  console.log(secretNum3)
   num3.innerHTML = `<img src="../assets/${secretNum3}.png" />`
   checkWin()
 }
@@ -59,20 +51,38 @@ function checkWin(){
   }
 }
 
-function slotStyle(secretNum){
-  if (secretNum === 1) prettyNum = " 🍒 "
-  if (secretNum === 2) prettyNum = " 🍄 "
-  if (secretNum === 3) prettyNum = " 🍀 "
-  if (secretNum === 4) prettyNum = " 🦄 "
-  if (secretNum === 5) prettyNum = " 🌈 "
-  if (secretNum === 6) prettyNum = " ♥️ "
-  if (secretNum === 7) prettyNum = " 🍩 "
-  if (secretNum === 8) prettyNum = " 🌮 "
-  if (secretNum === 9) prettyNum = " 🧁️ "
-  if (secretNum === 10) prettyNum = " 🍌 "
+
+let timerIntervalId
+
+function startTimer(){
+  spin = setInterval(roll, 200)
 }
 
-odoo.default({ el:'.js-odoo', from: 'NOVEMBER16', to: 'CODEVEMBER', animationDelay: 1000 });
+function roll() {
+  disp1 = Math.floor(Math.random() * 10 +1)
+  num1.innerHTML = `<img src="../assets/${disp1}.png" />`
+  num2.innerHTML = `<img src="../assets/${disp1}.png" />`
+  num3.innerHTML = `<img src="../assets/${disp1}.png" />`
+}
+
+function stopSpin() {
+  clearInterval(spin)
+  checkCredit()
+}
+
+// function slotStyle(secretNum){
+//   if (secretNum === 1) prettyNum = " 🍒 "
+//   if (secretNum === 2) prettyNum = " 🍄 "
+//   if (secretNum === 3) prettyNum = " 🍀 "
+//   if (secretNum === 4) prettyNum = " 🦄 "
+//   if (secretNum === 5) prettyNum = " 🌈 "
+//   if (secretNum === 6) prettyNum = " ♥️ "
+//   if (secretNum === 7) prettyNum = " 🍩 "
+//   if (secretNum === 8) prettyNum = " 🌮 "
+//   if (secretNum === 9) prettyNum = " 🧁️ "
+//   if (secretNum === 10) prettyNum = " 🍌 "
+// }
+
 
 //pull the lever, kronk !
 //an emperors new groove themed slot machine? maybe!

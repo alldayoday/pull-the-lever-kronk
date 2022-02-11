@@ -65,6 +65,7 @@ h1 {
   border: 10px solid #008087;
   max-width: 220px;
   max-height: 220px;
+  border-radius: 10%;
 }
 #num2 {
   grid-area: num2; 
@@ -74,6 +75,7 @@ h1 {
   border: 10px solid #008087;
   max-width: 220px;
   max-height: 220px;
+  border-radius: 10%;
 }
 #num3 { 
   grid-area: num3;
@@ -83,6 +85,7 @@ h1 {
   border: 10px solid #008087;
   max-width: 220px;
   max-height: 220px;
+  border-radius: 10%;
 }
 
 #credit {
