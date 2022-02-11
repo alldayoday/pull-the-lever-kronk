@@ -9,11 +9,15 @@ const credit = document.querySelector('#credit')
 let prettyNum
 let creditTotal = 50
 
-pull.addEventListener('click', stopSpin)
+pull.addEventListener('click', checkCredit)
 
 init()
-function init(){
-startTimer()
+function init (){
+  startSpin()
+}
+
+function roller(){
+startSpin()
 }
 
 
@@ -21,14 +25,14 @@ function checkCredit(){
   if (creditTotal >= 5) {
     creditTotal = creditTotal -= 5
     credit.textContent = `${creditTotal} Credits`
-    renderNum()
+  renderNum()
   } else {
     h1.textContent = "Looks like you're broke, come back when you have money!"
   }
 }
 
-
 function renderNum (){
+  clearInterval(spin)
   secretNum1 = Math.floor(Math.random() * 10 +1)
   num1.innerHTML = `<img src="../assets/${secretNum1}.png" />`
   secretNum2 = Math.floor(Math.random() * 10 +1)
@@ -51,24 +55,20 @@ function checkWin(){
   }
 }
 
-
-let timerIntervalId
-
-function startTimer(){
+function startSpin(){
   spin = setInterval(roll, 200)
 }
 
 function roll() {
   disp1 = Math.floor(Math.random() * 10 +1)
+  disp2 = Math.floor(Math.random() * 10 +1)
+  disp3 = Math.floor(Math.random() * 10 +1)
   num1.innerHTML = `<img src="../assets/${disp1}.png" />`
-  num2.innerHTML = `<img src="../assets/${disp1}.png" />`
-  num3.innerHTML = `<img src="../assets/${disp1}.png" />`
+  num2.innerHTML = `<img src="../assets/${disp2}.png" />`
+  num3.innerHTML = `<img src="../assets/${disp3}.png" />`
 }
 
-function stopSpin() {
-  clearInterval(spin)
-  checkCredit()
-}
+
 
 // function slotStyle(secretNum){
 //   if (secretNum === 1) prettyNum = " 🍒 "
