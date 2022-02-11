@@ -24,13 +24,13 @@ function checkCredit(){
 
 
 function renderNum (){
-  secretNum1 = Math.floor(Math.random() * 10 +1)
+  secretNum1 = Math.floor(Math.random() * 3 +1)
   slotStyle(secretNum1)
   num1.innerText = `${prettyNum}`
-  secretNum2 = Math.floor(Math.random() * 10 +1)
+  secretNum2 = Math.floor(Math.random() * 3 +1)
   slotStyle(secretNum2)
   num2.innerText = `${prettyNum}`
-  secretNum3 = Math.floor(Math.random() * 10 +1)
+  secretNum3 = Math.floor(Math.random() * 3 +1)
   slotStyle(secretNum3)
   num3.innerText = `${prettyNum}`
   checkWin()
@@ -39,8 +39,9 @@ function renderNum (){
 function checkWin(){
   if (secretNum1 === secretNum2 && secretNum1 === secretNum3) {
     h1.innerText = `Winner!`
-    creditTotal = creditTotal += 1000
-    credit.textContent = `${creditTotal}`
+    confetti.start(3000)
+    creditTotal = creditTotal += 100
+    credit.textContent = `${creditTotal} Credits`
   } else if (creditTotal > 0){
     h1.innerText = `KRONK, that's the wrong lever!!`
   } else {
@@ -60,6 +61,8 @@ function slotStyle(secretNum){
   if (secretNum === 9) prettyNum = " 🧁️ "
   if (secretNum === 10) prettyNum = " 🍌 "
 }
+
+odoo.default({ el:'.js-odoo', from: 'NOVEMBER16', to: 'CODEVEMBER', animationDelay: 1000 });
 
 //pull the lever, kronk !
 //an emperors new groove themed slot machine? maybe!
