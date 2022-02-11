@@ -29,13 +29,13 @@ function checkCredit(){
 
 function renderNum (){
   secretNum1 = Math.floor(Math.random() * 10 +1)
-  num1.setAttribute("class", "flip-horizontal-bottom")
+  num1.setAttribute("class", "roll-in-top")
   num1.innerHTML = `<img src="../assets/${secretNum1}.png" />`
   secretNum2 = Math.floor(Math.random() * 10 +1)
-  num2.setAttribute("class", "flip-horizontal-bottom")
+  num2.setAttribute("class", "roll-in-top")
   num2.innerHTML = `<img src="../assets/${secretNum2}.png" />`
   secretNum3 = Math.floor(Math.random() * 10 +1)
-  num3.setAttribute("class", "flip-horizontal-bottom")
+  num3.setAttribute("class", "roll-in-top")
   num3.innerHTML = `<img src="../assets/${secretNum3}.png" />`
   checkWin()
 }
@@ -53,7 +53,7 @@ function checkWin(){
   } else {
     h1.innerText = `Yzma is gonna be so mad`
   } 
-  setTimeout(stopFlip, 1500)
+  setTimeout(stopFlip, 1000)
 }
 
 
