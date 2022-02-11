@@ -53,14 +53,15 @@ function checkWin(){
   } else {
     h1.innerText = `Yzma is gonna be so mad`
   } 
+  setTimeout(stopFlip, 1500)
 }
 
-setTimeout(
+
 function stopFlip(){
   num1.setAttribute("class", "no-spin")
   num2.setAttribute("class", "no-spin")
   num3.setAttribute("class", "no-spin")
-}, 1000)
+}
 
 let timeLeft = 5
 
