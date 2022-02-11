@@ -2,13 +2,23 @@
 const pull = document.querySelector('#lever')
 const num1 = document.querySelector('#num1')
 const num2 = document.querySelector('#num2')
-const num3 = document.querySelector('#num3')
+const num3 = document.querySelector('#num3'
+)
 const h1 = document.querySelector('#title')
 const credit = document.querySelector('#credit')
+const lightDarkBtn = document.querySelector("#light-dark-button")
+const body = document.querySelector("body")
+
 
 // let prettyNum
 let creditTotal = 50
 pull.addEventListener('click', checkCredit)
+lightDarkBtn.addEventListener("click", toggleLightDark)
+
+function toggleLightDark() {
+  body.className = body.className === "dark" ? "" : "dark"
+  credit.className = credit.className === "dark" ? "" : "dark"
+}
 
 // init()
 // function init (){
@@ -53,7 +63,7 @@ function checkWin(){
   } else {
     h1.innerText = `Yzma is gonna be so mad`
   } 
-  setTimeout(stopFlip, 1000)
+  setTimeout(stopFlip, 800)
 }
 
 
@@ -81,6 +91,7 @@ function init() {
   num2.innerHTML = `<img src="../assets/${disp2}.png" />`
   num3.innerHTML = `<img src="../assets/${disp3}.png" />`
 }
+
 
 
 

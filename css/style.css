@@ -17,9 +17,10 @@ html {
   font-size: 62.5%;
 }
 
+
 body {
   background-color:#193068;
-  /* background-image: url('../assets/background-gif.gif'); */
+  background-image: url('../assets/background-gif.gif');
   background-size: cover;
   height: 100vh;
   padding:0;
@@ -29,7 +30,9 @@ body {
   margin: 0;
 }
 
-
+.light-dark-button {
+  display: block;
+}
 
 
 h1 {
@@ -48,14 +51,22 @@ h1 {
 
 .container {
   display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 60px; 
   grid-template-rows: 1fr; 
   gap: 0px 10px; 
   grid-template-areas: 
-    "num1 num2 num3"; 
+    "num1 num2 num3 light-dark-button"; 
   width: 650px;
-  height:auto;
   margin-top: 5%;
+}
+
+#light-dark-button {
+  height: 40px;
+  font-size: 10px;
+  color: #008087;
+  background-color: #193068;
+  border: 2px solid #008087;
+  font-weight: 600;
 }
 #num1 { 
   grid-area: num1; 
@@ -118,6 +129,18 @@ h1 {
   border: 3px solid #a4812e;
   font-family: 'Bubblegum Sans', cursive;
 }
+
+body.dark{
+  background-color: #008087;
+  background-image: none;
+}
+
+div.dark {
+  background-image: none;
+  background-color: #008087;
+}
+
+
 
 
 
