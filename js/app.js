@@ -40,13 +40,13 @@ function checkCredit(){
 function renderNum (){
   secretNum1 = Math.floor(Math.random() * 10 +1)
   num1.setAttribute("class", "roll-in-top")
-  num1.innerHTML = `<img src="assets/${secretNum1}.png" />`
+  num1.innerHTML = `<img src="../assets/${secretNum1}.PNG" />`
   secretNum2 = Math.floor(Math.random() * 10 +1)
   num2.setAttribute("class", "roll-in-top")
-  num2.innerHTML = `<img src="assets/${secretNum2}.png" />`
+  num2.innerHTML = `<img src="../assets/${secretNum2}.PNG" />`
   secretNum3 = Math.floor(Math.random() * 10 +1)
   num3.setAttribute("class", "roll-in-top")
-  num3.innerHTML = `<img src="assets/${secretNum3}.png" />`
+  num3.innerHTML = `<img src="../assets/${secretNum3}.PNG" />`
   checkWin()
 }
 
