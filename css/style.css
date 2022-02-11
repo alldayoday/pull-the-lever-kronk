@@ -53,8 +53,8 @@ h1 {
   gap: 0px 10px; 
   grid-template-areas: 
     "num1 num2 num3"; 
-  width:fit-content;
-  height:fit-content;
+  width: 650px;
+  height:auto;
   margin-top: 5%;
 }
 #num1 { 
@@ -63,6 +63,8 @@ h1 {
   font-size: 10rem;
   text-align: center;
   border: 10px solid #008087;
+  max-width: 220px;
+  max-height: 220px;
 }
 #num2 {
   grid-area: num2; 
@@ -70,6 +72,8 @@ h1 {
   font-size: 10rem;
   text-align: center;
   border: 10px solid #008087;
+  max-width: 220px;
+  max-height: 220px;
 }
 #num3 { 
   grid-area: num3;
@@ -77,6 +81,8 @@ h1 {
   font-size: 10rem;
   text-align: center;
   border: 10px solid #008087;
+  max-width: 220px;
+  max-height: 220px;
 }
 
 #credit {

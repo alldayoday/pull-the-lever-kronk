@@ -11,6 +11,13 @@ let creditTotal = 50
 
 pull.addEventListener('click', checkCredit)
 
+init()
+function init(){
+  num1.innerHTML =`<img src="../assets/2.png" />`
+  num2.innerHTML =`<img src="../assets/2.png" />`
+  num3.innerHTML =`<img src="../assets/2.png" />`
+}
+
 
 function checkCredit(){
   if (creditTotal >= 5) {
@@ -22,17 +29,20 @@ function checkCredit(){
   }
 }
 
+// .innerHTML = '<img src="imageName.png" />'
+// ../assets/0.png
 
 function renderNum (){
-  secretNum1 = Math.floor(Math.random() * 3 +1)
-  slotStyle(secretNum1)
-  num1.innerText = `${prettyNum}`
-  secretNum2 = Math.floor(Math.random() * 3 +1)
-  slotStyle(secretNum2)
-  num2.innerText = `${prettyNum}`
-  secretNum3 = Math.floor(Math.random() * 3 +1)
-  slotStyle(secretNum3)
-  num3.innerText = `${prettyNum}`
+  secretNum1 = Math.floor(Math.random() * 10 +1)
+  // slotStyle(secretNum1)
+  num1.innerHTML = `<img src="../assets/${secretNum1}.png" />`
+  console.log(secretNum1)
+  secretNum2 = Math.floor(Math.random() * 10 +1)
+  console.log(secretNum2)
+  num2.innerHTML = `<img src="../assets/${secretNum2}.png" />`
+  secretNum3 = Math.floor(Math.random() * 10 +1)
+  console.log(secretNum3)
+  num3.innerHTML = `<img src="../assets/${secretNum3}.png" />`
   checkWin()
 }
 
