@@ -41,7 +41,7 @@ function checkCredit(){
 function renderNum (){
   secretNum1 = Math.floor(Math.random() * 10 +1)
   num1.setAttribute("class", "roll-in-top")
-  num1.innerHTML = `<img src="/alldayoday/pull-the-lever-kronk/raw/main/assets/${secretNum1}.png" />`
+  num1.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${secretNum1}.png" />`
   secretNum2 = Math.floor(Math.random() * 10 +1)
   num2.setAttribute("class", "roll-in-top")
   num2.innerHTML = `<img src="../assets/${secretNum2}.png" />`
