@@ -37,16 +37,15 @@ function checkCredit(){
 }
 
 
-
 function renderNum (){
   secretNum1 = Math.floor(Math.random() * 10 +1)
   num1.setAttribute("class", "roll-in-top")
-  num1.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${secretNum1}.png" />`
+  num1.innerHTML = `<img src="../assets/${secretNum1}.png" />`
   secretNum2 = Math.floor(Math.random() * 10 +1)
-  num2.setAttribute("class", "roll-in-top")
+  num2.setAttribute("class", "roll-in-top2")
   num2.innerHTML = `<img src="../assets/${secretNum2}.png" />`
   secretNum3 = Math.floor(Math.random() * 10 +1)
-  num3.setAttribute("class", "roll-in-top")
+  num3.setAttribute("class", "roll-in-top3")
   num3.innerHTML = `<img src="../assets/${secretNum3}.png" />`
   checkWin()
 }
@@ -64,7 +63,7 @@ function checkWin(){
   } else {
     h1.innerText = `Yzma is gonna be so mad`
   } 
-  setTimeout(stopFlip, 800)
+  setTimeout(stopFlip, 1100)
 }
 
 
