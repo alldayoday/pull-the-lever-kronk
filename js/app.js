@@ -17,7 +17,7 @@ lightDarkBtn.addEventListener("click", toggleLightDark)
 
 function toggleLightDark() {
   body.className = body.className === "dark" ? "" : "dark"
-  credit.className = credit.className === "dark" ? "" : "dark"
+  h1.className = h1.className === "dark" ? "" : "dark"
 }
 
 // init()
@@ -59,9 +59,9 @@ function checkWin(){
   } else if (creditTotal > 999) {
     h1.innerText = `You should honestly just cash out now`
   } else if (creditTotal > 0){
-    h1.innerText = `KRONK, that's the wrong lever!!`
+    h1.innerText = `WRONG LEVEEEEER!!`
   } else {
-    h1.innerText = `Yzma is gonna be so mad`
+    h1.innerText = `Why do we even have that lever?`
   } 
   setTimeout(stopFlip, 1100)
 }
@@ -73,14 +73,14 @@ function stopFlip(){
   num3.setAttribute("class", "no-spin")
 }
 
-let timeLeft = 5
+// let timeLeft = 5
 
-function startSpin(){
-  spin = setInterval(roll, 200)
-}
-function seconds(){
+// function startSpin(){
+//   spin = setInterval(roll, 200)
+// }
+// function seconds(){
 
-}
+// }
 
 init()
 function init() {
