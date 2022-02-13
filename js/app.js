@@ -9,9 +9,9 @@ const lightDarkBtn = document.querySelector("#light-dark-button")
 const body = document.querySelector("body")
 
 /**---AUDIO FILES---**/
-const allComingTogether = new Audio('../assets/all-coming-together.mp3')
-const wrongLever = new Audio('../assets/wrong-lever.mp3')
-const whyThatLever = new Audio('../assets/why-do-we.mp3')
+const allComingTogether = new Audio('https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/all-coming-together.mp3')
+const wrongLever = new Audio('https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/assets/wrong-lever.mp3')
+const whyThatLever = new Audio('https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/assets/why-do-we.mp3')
 
 /**---VARIABLES---**/
 let creditTotal = 50
@@ -28,7 +28,7 @@ function init() {
   disp3 = Math.floor(Math.random() * 10 + 1)
   num1.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${disp1}.png" />`
   num2.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${disp2}.png" />`
-  num3.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${disp3}.png" />`
+  num3.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${secretNum1}.png" />`
 }
 
 
