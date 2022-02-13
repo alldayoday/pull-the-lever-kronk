@@ -21,6 +21,6 @@ Add a pawn shop option where players can select an item in their posession to se
 ![BEES SS](https://github.com/alldayoday/pull-the-lever-kronk/raw/main/pull-the-lever-kronk/assets/SS2.png)
 
 ## Special Thanks
-* All *Emperor's New Groove* references owned by Disney, use for educational purposes - I claim no ownership of Disney property
-* Animations from Animista, credit details in CSS file
+* All *Emperor's New Groove* references owned by Disney, use for educational purposes
+* Animations from Animista
 * Favicon and background images from HiCLipArt
