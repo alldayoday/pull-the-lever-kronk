@@ -28,7 +28,7 @@ function init() {
   disp3 = Math.floor(Math.random() * 10 + 1)
   num1.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${disp1}.png" />`
   num2.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${disp2}.png" />`
-  num3.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${secretNum1}.png" />`
+  num3.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${disp3}.png" />`
 }
 
 
@@ -44,13 +44,13 @@ function checkCredit() {
 
 
 function renderNum() {
-  secretNum1 = Math.floor(Math.random() * 2 + 1)
+  secretNum1 = Math.floor(Math.random() * 10 + 1)
   num1.setAttribute("class", "roll-in-top")
   num1.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${secretNum1}.png" />`
-  secretNum2 = Math.floor(Math.random() * 2 + 1)
+  secretNum2 = Math.floor(Math.random() * 10 + 1)
   num2.setAttribute("class", "roll-in-top2")
   num2.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${secretNum2}.png" />`
-  secretNum3 = Math.floor(Math.random() * 2 + 1)
+  secretNum3 = Math.floor(Math.random() * 10 + 1)
   num3.setAttribute("class", "roll-in-top3")
   num3.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${secretNum3}.png" />`
   checkWin()
