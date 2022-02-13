@@ -45,11 +45,10 @@ h1 {
 .container {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 60px; 
-  grid-template-rows: 1fr 20%; 
+  grid-template-rows: 1fr; 
   gap: 0px 10px; 
   grid-template-areas: 
-    "num1 num2 num3 light-dark-button"
-    "lever lever credit credit"; 
+    "num1 num2 num3 light-dark-button"; 
   width: 650px;
   margin-top: 5%;
 }
@@ -140,6 +139,24 @@ h1.dark{
   background-image: none;
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: none;
+    background-color: midnightblue;
+  }
+  body.dark {
+    background-image: none;
+    background-color: #071622;
+  }
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+}
+
+
+
 
 
 
@@ -166,7 +183,7 @@ h1.dark{
  * ---------------------------------------------- */
 
 
- @-webkit-keyframes roll-in-top {
+@-webkit-keyframes roll-in-top {
   0% {
     -webkit-transform: translateY(-800px) rotate(-540deg);
             transform: translateY(-800px) rotate(-540deg);
