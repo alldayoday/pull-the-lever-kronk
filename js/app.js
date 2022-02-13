@@ -10,8 +10,8 @@ const body = document.querySelector("body")
 
 /**---AUDIO FILES---**/
 const allComingTogether = new Audio('https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/all-coming-together.mp3')
-const wrongLever = new Audio('https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/assets/wrong-lever.mp3')
-const whyThatLever = new Audio('https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/assets/why-do-we.mp3')
+const wrongLever = new Audio('https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/wrong-lever.mp3')
+const whyThatLever = new Audio('https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/why-do-we.mp3')
 
 /**---VARIABLES---**/
 let creditTotal = 50
