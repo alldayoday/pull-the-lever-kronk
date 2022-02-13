@@ -123,8 +123,8 @@ h1 {
   margin-bottom: 20px;
   display: inline-block;
   border-radius: 20px;
-  background-color:#717630;
-  border: 3px solid #a4812e;
+  background-color:#008087;
+  border: 3px solid goldenrod;
   font-family: 'Bubblegum Sans', cursive;
   grid-area: lever;
 }

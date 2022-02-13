@@ -20,6 +20,11 @@ lightDarkBtn.addEventListener("click", toggleLightDark)
 function toggleLightDark() {
   body.className = body.className === "dark" ? "" : "dark"
   h1.className = h1.className === "dark" ? "" : "dark"
+  if (body.className === "dark") {
+    lightDarkBtn.textContent = "KRONK"
+  } else {
+    lightDarkBtn.textContent = "BEES?"
+  }
 }
 
 // init()
