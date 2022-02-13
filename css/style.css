@@ -39,7 +39,7 @@ h1 {
   -webkit-linear-gradient(#f4ae28, #d50b3a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
-  
+  margin-left: 60px;
 }
 
 .container {
@@ -60,7 +60,8 @@ h1 {
   font-size: 15px;
   color: #008087;
   background-color:#f4ae28;
-  border: 2px solid #008087;
+  border: 4px solid #008087;
+  border-radius: 3px;
   font-weight: 600;
 }
 #num1 { 
@@ -109,9 +110,9 @@ h1 {
   font-family: 'Bubblegum Sans', cursive;
   /* background-image: url("../assets/credit-background.png"); */
   border: 3px solid #008087;
-  border-radius: 50%;
+  border-radius: 20px;
   height: 100px;
-  width: 220px;
+  width: 240px;
   grid-area: credit;
 }
 
@@ -130,7 +131,7 @@ h1 {
 
 body.dark{
   background-color: #071622;
-  background-image: url('../assets/disney.png');
+  background-image: url('../assets/Disney2.png');
 
 }
 

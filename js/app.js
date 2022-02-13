@@ -8,7 +8,9 @@ const h1 = document.querySelector('#title')
 const credit = document.querySelector('#credit')
 const lightDarkBtn = document.querySelector("#light-dark-button")
 const body = document.querySelector("body")
-
+const allComingTogether = new Audio('../assets/all-coming-together.mp3')
+const wrongLever = new Audio('../assets/wrong-lever.mp3')
+const whyThatLever = new Audio('../assets/why-do-we.mp3')
 
 // let prettyNum
 let creditTotal = 50
@@ -32,19 +34,19 @@ function checkCredit(){
     credit.textContent = `${creditTotal} Credits`
     renderNum()
   } else {
-    h1.textContent = "Looks like you're broke, come back when you have money!"
+    h1.textContent = "Come back when you have money!"
   }
 }
 
 
 function renderNum (){
-  secretNum1 = Math.floor(Math.random() * 10 +1)
+  secretNum1 = Math.floor(Math.random() * 3 +1)
   num1.setAttribute("class", "roll-in-top")
   num1.innerHTML = `<img src="../assets/${secretNum1}.png" />`
-  secretNum2 = Math.floor(Math.random() * 10 +1)
+  secretNum2 = Math.floor(Math.random() * 3 +1)
   num2.setAttribute("class", "roll-in-top2")
   num2.innerHTML = `<img src="../assets/${secretNum2}.png" />`
-  secretNum3 = Math.floor(Math.random() * 10 +1)
+  secretNum3 = Math.floor(Math.random() * 3 +1)
   num3.setAttribute("class", "roll-in-top3")
   num3.innerHTML = `<img src="../assets/${secretNum3}.png" />`
   checkWin()
@@ -56,16 +58,23 @@ function checkWin(){
     confetti.start(3000)
     creditTotal = creditTotal += 100
     credit.textContent = `${creditTotal} Credits`
+    allComingTogether.volume = .15
+    allComingTogether.play()
   } else if (creditTotal > 999) {
     h1.innerText = `You should honestly just cash out now`
   } else if (creditTotal > 0){
     h1.innerText = `WRONG LEVEEEEER!!`
+    wrongLever.volume = .15
+    wrongLever.play()
   } else {
     h1.innerText = `Why do we even have that lever?`
+    whyThatLever.volume = .15
+    whyThatLever.play()
   } 
   setTimeout(stopFlip, 1100)
 }
-
+// foxSays.volume = .10
+//   foxSays.play()
 
 function stopFlip(){
   num1.setAttribute("class", "no-spin")
