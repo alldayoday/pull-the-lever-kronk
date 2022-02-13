@@ -141,16 +141,23 @@ h1.dark{
 
 @media only screen and (max-width: 768px) {
   body {
-    background-image: none;
+    background-image: url('../assets/phone-kronk.gif');
     background-color: midnightblue;
   }
   body.dark {
-    background-image: none;
+    background-image: url('../assets/bees-phone.png');
     background-color: #071622;
   }
   h1 {
     font-size: 5rem;
     text-align: center;
+    justify-self: center;
+  }
+  h1.dark {
+    margin-top: 180px;
+  }
+  .container {
+    justify-content: center;
   }
 
 }
