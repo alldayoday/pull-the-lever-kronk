@@ -16,5 +16,10 @@ Project created with
 Add a pawn shop option where players can select an item in their posession to sell directly to the casino in order to keep playing.
 
 ## Game Images
-![SS1KRONK](../pull-the-lever-kronk/assets/SS1.png)
-![SS2DARK](../pull-the-lever-kronk/assets/SS2.png)
+![SS1KRONK](https://github.com/alldayoday/pull-the-lever-kronk/raw/main/pull-the-lever-kronk/assets/SS1.png)
+![SS2DARK](https://github.com/alldayoday/pull-the-lever-kronk/raw/main/pull-the-lever-kronk/assets/SS2.png))
+
+## Special Thanks
+* All *Emperor's New Groove* references owned by Disney, use for educational purposes - I claim no ownership of Disney property
+* Animations from Animista, credit details in CSS file
+* Favicon and background images from HiCLipArt
