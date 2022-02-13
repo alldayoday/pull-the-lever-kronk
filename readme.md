@@ -8,12 +8,12 @@
 
 ## Technologies Used:
 Project created with
-*HTML
-*CSS
-*JavaScript
+* HTML
+* CSS
+* JavaScript
 
 ## Future Enchancements 
-*Add a pawn shop option where players can select an item in their posession to sell directly to the casino in order to keep playing.
+Add a pawn shop option where players can select an item in their posession to sell directly to the casino in order to keep playing.
 
 ## Game Images
 ![SS1KRONK](../pull-the-lever-kronk/assets/SS1.png)
