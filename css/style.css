@@ -173,7 +173,8 @@ h1.dark{
   h1 {
     font-size: 3rem;
     justify-self: center;
-    margin: 10px;
+    margin-top: 20px;
+    text-align: center;
   }
 
   img{
