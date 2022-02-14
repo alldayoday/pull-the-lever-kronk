@@ -14,7 +14,7 @@ const arm = document.querySelector('#arm')
 const allComingTogether = new Audio('https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/all-coming-together.mp3')
 const wrongLever = new Audio('https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/wrong-lever.mp3')
 const whyThatLever = new Audio('https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/why-do-we.mp3')
-const seenThatComin = new Audio('https:github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/seen-that-comin.mp3')
+const seenThatComin = new Audio('https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/seen-that-comin.mp3')
 
 /**---VARIABLES---**/
 let creditTotal
