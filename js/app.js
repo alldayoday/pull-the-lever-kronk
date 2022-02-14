@@ -106,7 +106,7 @@ function toggleLightDark() {
   }
 }
 
-function cashZero(){
+function cashZero() {
   creditTotal = 0
   credit.innerHTML = "0 Credits"
   seenThatComin.volume = .10
