@@ -8,6 +8,7 @@ const credit = document.querySelector('#credit')
 const lightDarkBtn = document.querySelector("#light-dark-button")
 const body = document.querySelector("body")
 const cashOut = document.querySelector('#cashOut')
+const arm = document.querySelector('#arm')
 
 /**---AUDIO FILES---**/
 const allComingTogether = new Audio('https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/all-coming-together.mp3')
@@ -30,6 +31,7 @@ function init() {
   disp2 = Math.floor(Math.random() * 10 + 1)
   disp3 = Math.floor(Math.random() * 10 + 1)
   creditTotal = 50
+  arm.innerHTML = `<img src="./assets/arm.png">`
   num1.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${disp1}.png" />`
   num2.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${disp2}.png" />`
   num3.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${disp3}.png" />`
@@ -50,6 +52,7 @@ function checkCredit() {
 function renderNum() {
   secretNum1 = Math.floor(Math.random() * 10 + 1)
   num1.setAttribute("class", "roll-in-top")
+  arm.setAttribute("class", "flip-horizontal-bottom")
   num1.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${secretNum1}.png" />`
   secretNum2 = Math.floor(Math.random() * 10 + 1)
   num2.setAttribute("class", "roll-in-top2")
@@ -88,6 +91,7 @@ function stopSpin() {
   num1.setAttribute("class", "no-spin")
   num2.setAttribute("class", "no-spin")
   num3.setAttribute("class", "no-spin")
+  arm.setAttribute("class", "no-flip")
 }
 
 
