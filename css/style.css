@@ -61,7 +61,7 @@ h1 {
 #light-dark-button {
   height: 30px;
   width: 50px;
-  margin-left: 50px;
+  margin-left: 80px;
   font-family: 'Bubblegum Sans', cursive;
   font-size: 10px;
   color: #008087;
@@ -118,8 +118,8 @@ h1 {
 
 #lever {
   font-size: large;
-margin: auto;
-margin-top: 20px;
+  margin: auto;
+  margin-top: 20px;
   border-radius: 20px;
   background-color:#008087;
   border: 3px solid goldenrod;
@@ -150,6 +150,8 @@ body.dark{
 h1.dark{
   background-color:goldenrod;
   background-image: none;
+  font-family:'Comfortaa', cursive;
+  font-size: 4rem;
 }
 
 @media only screen and (max-width: 768px) {
