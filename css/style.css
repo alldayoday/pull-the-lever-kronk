@@ -43,20 +43,27 @@ h1 {
 }
 
 .container {
+  margin-top: 50px;
   display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 60px; 
-  grid-template-rows: 1fr; 
-  gap: 0px 10px; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 60px; 
+  grid-template-rows: 1fr 25%; 
+  gap: 20px 10px; 
   grid-template-areas: 
-    "num1 num2 num3 light-dark-button"; 
-  width: 650px;
-  margin-top: 5%;
+    "num1 num1 num2 num2 num3 num3 dark-light-btn"
+    "lever lever credit credit credit cashOut cashOut"; 
+  width: 880px;
+  height: 400px;
+  background-image: url(../assets/slotback.gif);
+  padding: 55px 128px 400px 65px;
+  border: 3px solid goldenrod;
 }
 
 #light-dark-button {
-  height: 40px;
+  height: 30px;
+  width: 50px;
+  margin-left: 50px;
   font-family: 'Bubblegum Sans', cursive;
-  font-size: 15px;
+  font-size: 10px;
   color: #008087;
   background-color:#f4ae28;
   border: 4px solid #008087;
@@ -97,35 +104,41 @@ h1 {
 #credit {
   background-color:goldenrod;
   font-size: 4rem;
-  width:fit-content;
   text-align: center;
   vertical-align: center;
   text-shadow: #008087;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
   padding: 20px;
   font-family: 'Bubblegum Sans', cursive;
-  /* background-image: url("../assets/credit-background.png"); */
   border: 3px solid #008087;
   border-radius: 20px;
   height: 100px;
-  width: 240px;
   grid-area: credit;
+  margin-top: 50px;
 }
 
 #lever {
   font-size: large;
-  margin-left: 37%;
-  margin-right: 2%;
-  margin-bottom: 20px;
-  display: inline-block;
+margin: auto;
+margin-top: 20px;
   border-radius: 20px;
   background-color:#008087;
   border: 3px solid goldenrod;
   font-family: 'Bubblegum Sans', cursive;
   grid-area: lever;
+  padding: 10px;
+}
+
+#cashOut {
+  font-size: large;
+  display: inline-block;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color:#008087;
+  border: 3px solid goldenrod;
+  font-family: 'Bubblegum Sans', cursive;
+  grid-area: cashOut;
 }
 
 body.dark{

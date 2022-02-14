@@ -7,6 +7,7 @@ const h1 = document.querySelector('#title')
 const credit = document.querySelector('#credit')
 const lightDarkBtn = document.querySelector("#light-dark-button")
 const body = document.querySelector("body")
+const cashOut = document.querySelector('#cashOut')
 
 /**---AUDIO FILES---**/
 const allComingTogether = new Audio('https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/all-coming-together.mp3')
@@ -14,11 +15,13 @@ const wrongLever = new Audio('https://github.com/alldayoday/pull-the-lever-kronk
 const whyThatLever = new Audio('https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/why-do-we.mp3')
 
 /**---VARIABLES---**/
-let creditTotal = 50
+let creditTotal
 
 /**---EVENT LISTENERS---**/
 pull.addEventListener('click', checkCredit)
 lightDarkBtn.addEventListener("click", toggleLightDark)
+cashOut.addEventListener('click', cashZero)
+
 
 
 init()
@@ -26,6 +29,7 @@ function init() {
   disp1 = Math.floor(Math.random() * 10 + 1)
   disp2 = Math.floor(Math.random() * 10 + 1)
   disp3 = Math.floor(Math.random() * 10 + 1)
+  creditTotal = 50
   num1.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${disp1}.png" />`
   num2.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${disp2}.png" />`
   num3.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${disp3}.png" />`
@@ -95,4 +99,9 @@ function toggleLightDark() {
   } else {
     lightDarkBtn.textContent = "BEES?"
   }
+}
+
+function cashZero(){
+  creditTotal = 0
+  credit.innerHTML = "0 Credits"
 }
