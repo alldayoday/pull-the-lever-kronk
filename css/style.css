@@ -52,7 +52,7 @@ img {
     "arm num1 num1 num2 num2 num3 num3 light-dark-btn"
     "lever lever credit credit credit cashOut cashOut ."; 
   width: 900px;
-  height: 400px;
+  height: 40%;
   padding: 100px 10px 400px 65px;
   border: 3px solid goldenrod;
   border-radius: 50%;
@@ -136,10 +136,7 @@ img {
   grid-area: cashOut;
 }
 
-img {
-  width: auto;
-  height: 200px;
-}
+
 
 .arm{
   grid-area: arm;
@@ -159,7 +156,7 @@ h1.dark{
   font-size: 4rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
   body {
   background-image: none;
   }
