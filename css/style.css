@@ -33,7 +33,7 @@ h1 {
   -webkit-linear-gradient(#f4ae28, #d50b3a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
-  margin-left: 60px;
+  justify-self: center;
 }
 
 img {
@@ -158,7 +158,7 @@ h1.dark{
 
 @media only screen and (max-width: 960px) {
   body {
-  background-image: none;
+  background-image: url(../assets/kronkphone.gif)
   }
   h1 {
     font-size: 3rem;
