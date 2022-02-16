@@ -158,13 +158,16 @@ h1.dark{
 
 @media only screen and (max-width: 960px) {
   body {
-  background-image: url(../assets/kronkphone.gif)
+  background-image: url(../assets/kronkphone.gif);
+  background-position: left;
+  
   }
   h1 {
     font-size: 3rem;
     justify-self: center;
     margin-top: 20px;
     text-align: center;
+    
   }
 
   img{
