@@ -23,4 +23,5 @@ Add a pawn shop option where players can select an item in their posession to se
 ## Special Thanks
 * All *Emperor's New Groove* references owned by Disney, use for educational purposes
 * Animations from Animista
-* Favicon and background images from HiCLipArt
+* Favicon and background image sources from HiCLipArt
+* Images and background designed with Canva
