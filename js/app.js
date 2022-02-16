@@ -43,6 +43,7 @@ function checkCredit() {
   if (creditTotal >= 5) {
     creditTotal = creditTotal -= 5
     credit.textContent = `${creditTotal} Credits`
+    pull.style.visibility = "hidden"
     renderNum()
   } else {
     h1.textContent = "Come back when you have money!"
@@ -93,6 +94,7 @@ function stopSpin() {
   num2.setAttribute("class", "no-spin")
   num3.setAttribute("class", "no-spin")
   arm.setAttribute("class", "no-flip")
+  pull.style.visibility = 'visible';
 }
 
 
