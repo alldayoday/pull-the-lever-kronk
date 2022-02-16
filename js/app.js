@@ -94,7 +94,7 @@ function stopSpin() {
   num2.setAttribute("class", "no-spin")
   num3.setAttribute("class", "no-spin")
   arm.setAttribute("class", "no-flip")
-  pull.style.visibility = 'visible';
+  pull.style.visibility = 'visible'
 }
 
 
