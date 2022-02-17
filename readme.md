@@ -4,6 +4,7 @@
 
 ## Game Deployment
 * https://pull-the-lever-kronk.surge.sh/
+* Game deploys through link, no download necessary.
 * Please note that the title will say that you have pulled the wrong lever. This is not an indication that you have selected the wrong button to click, it is simply the correct reference to the film the game is based on. You should be clicking the button that says "Pull Lever".
 
 ## Technologies Used:
