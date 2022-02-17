@@ -74,14 +74,15 @@ img {
 }
 #num1 { 
   grid-area: num1; 
-  background-color:black;
+  background-color:goldenrod;
   border: 10px solid #008087;
   border-radius: 10%;
   justify-self: right;
 }
 #num2 {
   grid-area: num2; 
-  background-color:black;
+  /* background-color:black; */
+  background-color:goldenrod;
   border: 10px solid #008087;
   border-radius: 10%;
   justify-self: center;
@@ -89,8 +90,9 @@ img {
 }
 #num3 { 
   grid-area: num3;
-  background-color:black;
+  /* background-color:black; */
   border: 10px solid #008087;
+  background-color:goldenrod;
   border-radius: 10%;
   justify-self: left;
 }
