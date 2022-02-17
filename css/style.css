@@ -231,7 +231,7 @@ h1.dark{
   padding: 0;
   }
   body.dark {
-    background-image: none;
+    background-image: url(../assets/beesphone.png);
   }
 }
 
