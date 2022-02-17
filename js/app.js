@@ -26,12 +26,11 @@ cashOut.addEventListener('click', cashZero)
 
 
 init()
-
 function init() {
   disp1 = Math.floor(Math.random() * 10 + 1)
   disp2 = Math.floor(Math.random() * 10 + 1)
   disp3 = Math.floor(Math.random() * 10 + 1)
-  creditTotal = 50
+  creditTotal = 100
   arm.innerHTML = `<img src="./assets/arm.png">`
   num1.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${disp1}.png" />`
   num2.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${disp2}.png" />`
