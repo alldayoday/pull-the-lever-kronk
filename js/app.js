@@ -55,7 +55,7 @@ function renderNum() {
   num1.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${secretNum1}.png" />`
   secretNum2 = Math.floor(Math.random() * 10 + 1)
   num2.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${secretNum2}.png" />`
-  secretNum3 = Math.floor(Math.random() * 10+ 1)
+  secretNum3 = Math.floor(Math.random() * 10 + 1)
   num3.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${secretNum3}.png" />`
   checkWin()
 }
@@ -68,8 +68,6 @@ function checkWin() {
     credit.textContent = `${creditTotal} Credits`
     allComingTogether.volume = .15
     allComingTogether.play()
-  } else if (creditTotal > 999) {
-    h1.innerText = `You should honestly just cash out now`
   } else if (creditTotal > 0) {
     h1.innerText = `WRONG LEVEEEEER!!`
     wrongLever.volume = .15
@@ -100,7 +98,7 @@ function cashZero() {
 
 function startSpin(){
   spin = setInterval(roll, 100)
-  setTimeout(stopAttempt, 1800)
+  setTimeout(stopAttempt, 3500)
   arm.setAttribute("class", "flip-horizontal-bottom")
 }
 
