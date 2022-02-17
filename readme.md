@@ -12,8 +12,8 @@
 ![CSS](https://img.shields.io/badge/-CSS-blueviolet)
 ![JAVASCRIPT](https://img.shields.io/badge/-Javascript-yellow)
 
-## Future Enchancements 
-Add a pawn shop option where players can select an item in their posession to sell directly to the casino in order to keep playing.
+## Future Enhancements 
+Add a pawn shop option where players can select an item in their possession to sell directly to the casino in order to keep playing.
 
 ## Game Images
 ![KRONK SS](https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/SS1.png)
