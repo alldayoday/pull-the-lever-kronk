@@ -25,8 +25,8 @@ lightDarkBtn.addEventListener("click", toggleLightDark)
 cashOut.addEventListener('click', cashZero)
 
 
-
 init()
+
 function init() {
   disp1 = Math.floor(Math.random() * 10 + 1)
   disp2 = Math.floor(Math.random() * 10 + 1)
@@ -38,33 +38,28 @@ function init() {
   num3.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${disp3}.png" />`
 }
 
-
 function checkCredit() {
   if (creditTotal >= 5) {
     creditTotal = creditTotal -= 5
     credit.textContent = `${creditTotal} Credits`
     pull.style.visibility = "hidden"
-    renderNum()
+    startSpin()
+    setTimeout(stopSpin, 1200)
+    h1.textContent = `Pull the Lever, Kronk!`
   } else {
     h1.textContent = "Come back when you have money!"
   }
 }
 
-
 function renderNum() {
   secretNum1 = Math.floor(Math.random() * 10 + 1)
-  num1.setAttribute("class", "roll-in-top")
-  arm.setAttribute("class", "flip-horizontal-bottom")
   num1.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${secretNum1}.png" />`
   secretNum2 = Math.floor(Math.random() * 10 + 1)
-  num2.setAttribute("class", "roll-in-top2")
   num2.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${secretNum2}.png" />`
-  secretNum3 = Math.floor(Math.random() * 10 + 1)
-  num3.setAttribute("class", "roll-in-top3")
+  secretNum3 = Math.floor(Math.random() * 10+ 1)
   num3.innerHTML = `<img src="https://github.com/alldayoday/pull-the-lever-kronk/raw/main/assets/${secretNum3}.png" />`
   checkWin()
 }
-
 
 function checkWin() {
   if (secretNum1 === secretNum2 && secretNum1 === secretNum3) {
@@ -85,18 +80,7 @@ function checkWin() {
     whyThatLever.volume = .15
     whyThatLever.play()
   }
-  setTimeout(stopSpin, 1100)
 }
-
-
-function stopSpin() {
-  num1.setAttribute("class", "no-spin")
-  num2.setAttribute("class", "no-spin")
-  num3.setAttribute("class", "no-spin")
-  arm.setAttribute("class", "no-flip")
-  pull.style.visibility = 'visible'
-}
-
 
 function toggleLightDark() {
   body.className = body.className === "dark" ? "" : "dark"
@@ -113,4 +97,29 @@ function cashZero() {
   credit.innerHTML = "0 Credits"
   seenThatComin.volume = .10
   seenThatComin.play()
+}
+
+function startSpin(){
+  spin = setInterval(roll, 100)
+  setTimeout(stopAttempt, 1800)
+  arm.setAttribute("class", "flip-horizontal-bottom")
+}
+
+function roll() {
+  disp1 = Math.floor(Math.random() * 10 +1)
+  disp2 = Math.floor(Math.random() * 10 +1)
+  disp3 = Math.floor(Math.random() * 10 +1)
+  num1.innerHTML = `<img src="../assets/${disp1}.png" />`
+  num2.innerHTML = `<img src="../assets/${disp2}.png" />`
+  num3.innerHTML = `<img src="../assets/${disp3}.png" />`
+}
+
+function stopSpin() {
+  clearInterval(spin)
+  renderNum()
+}
+
+function stopAttempt() {
+  arm.setAttribute("class", "no-flip")
+  pull.style.visibility = 'visible'
 }
