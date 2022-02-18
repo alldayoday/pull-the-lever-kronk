@@ -74,20 +74,20 @@ img {
 }
 #num1 { 
   grid-area: num1; 
-  border: 10px solid #008087;
+  /* border: 10px solid #008087; */
   border-radius: 10%;
   justify-self: right;
 }
 #num2 {
   grid-area: num2; 
-  border: 10px solid #008087;
+  /* border: 10px solid #008087; */
   border-radius: 10%;
   justify-self: center;
   margin-right: 0;
 }
 #num3 { 
   grid-area: num3;
-  border: 10px solid #008087;
+  /* border: 10px solid #008087; */ 
   border-radius: 10%;
   justify-self: left;
 }

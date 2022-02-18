@@ -97,7 +97,7 @@ function cashZero() {
 }
 
 function startSpin(){
-  spin = setInterval(roll, 100)
+  spin = setInterval(roll, 50)
   setTimeout(stopAttempt, 3500)
   arm.setAttribute("class", "flip-horizontal-bottom")
 }
