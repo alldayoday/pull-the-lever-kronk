@@ -25,3 +25,4 @@ Add a pawn shop option where players can select an item in their possession to s
 * Animations from Animista
 * Favicon and background image sources from HiCLipArt
 * Images and background designed with Canva
+* Confetti from https://github.com/mathusummut/ 
