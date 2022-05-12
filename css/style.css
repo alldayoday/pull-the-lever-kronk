@@ -51,7 +51,7 @@ img {
   grid-template-areas: 
     "arm num1 num1 num2 num2 num3 num3 light-dark-btn"
     "lever lever credit credit credit cashOut cashOut ."; 
-  width: 900px;
+  width: 70%;
   height: 40%;
   padding: 100px 10px 400px 65px;
   border: 3px solid goldenrod;
@@ -182,7 +182,7 @@ h1.dark{
     grid-template-areas: 
       "num1 num1 num2 num2 num3 num3"
       "lever credit credit credit cashOut light-dark-btn"; 
-    width: fit-content;
+    width: 90%;
     height: 50vh;
     border-radius: 20px;
     padding: 50px 10px 350px;
